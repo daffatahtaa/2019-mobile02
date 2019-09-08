@@ -64,8 +64,13 @@ public class MainActivity extends AppCompatActivity {
 
 	public void handleReset (View view) {
 		//initRandomNumber();
-		setContentView(R.layout.activity_main);
+		newGame();
+	}
+
+	private void newGame(){
+		angkaRandom = random.nextInt(100)+1;
 		button.setEnabled(true);
+		reset.setEnabled(false);
 	}
 
 }
